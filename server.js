@@ -47,6 +47,11 @@ app.get('/about', (req, res) => {
        });
 });
 
+app.get('/menu', (req, res) => {
+    res.render('menu', {
+        menus: ["a","b","c"]
+    });
+});
 // app.get('/maintenance', (req, res) =>{
 //     res.render('maintenance');
 // });
