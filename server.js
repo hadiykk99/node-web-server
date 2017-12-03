@@ -49,6 +49,7 @@ app.get('/about', (req, res) => {
 
 app.get('/menu', (req, res) => {
     res.render('menu', {
+        pageTitle: "Menu Page"
         menus: ["a","b","c"]
     });
 });
